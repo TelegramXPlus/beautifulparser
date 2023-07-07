@@ -4,7 +4,6 @@ beautifulparser is a (very) simple library for parsing HTML documents inspired b
 ## Getting Started
 ```
 nimble install beautifulparser
-
 ```
 
 ## Usage
