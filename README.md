@@ -16,7 +16,7 @@ import beautifulparser
 let html = loadHtml("input.html") # or parseHtml("<h1>Your html</h1>")
 
 for i in html.findAllNodes("span", {"class": "my-custom-class"}):
-  echo i.text
+  echo i.innerText
 
 ```
 
@@ -31,7 +31,7 @@ import beautifulparser
 let html = loadHtml("input.html")
 
 for i in html.findAllNodes("span", {"class": "my-custom-class"}.toTable()):
-  echo i.text
+  echo i.innerText
 ```
 
 
