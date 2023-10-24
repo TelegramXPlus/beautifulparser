@@ -6,7 +6,10 @@ import std/options
 
 proc getNodes(node: XmlNode, name: string, options: Table[string, string]): seq[XmlNode] =
   for childr in node.findAll(name):
-    if childr.attrsLen == 0:
+    if len(options) == 0:
+      result.add(childr)
+      continue
+    elif childr.attrsLen == 0:
       continue
     block iterOptions:
       for k, v in options.pairs():
@@ -17,7 +20,9 @@ proc getNodes(node: XmlNode, name: string, options: Table[string, string]): seq[
 
 proc getNode(node: XmlNode, name: string, options: Table[string, string]): Option[XmlNode] =
   for childr in node.findAll(name):
-    if childr.attrsLen == 0:
+    if len(options) == 0:
+      return some(childr)
+    elif childr.attrsLen == 0:
       continue
     block iterOptions:
       for k, v in options.pairs():
