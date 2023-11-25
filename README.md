@@ -9,7 +9,6 @@ nimble install beautifulparser
 ## Usage
 ```nim
 import std/htmlparser # to use loadHtml/parseHtml procedures
-import std/xmltree # to get typing for XmlNode
 import beautifulparser
 
 
@@ -24,7 +23,6 @@ for i in html.findAllNodes("span", {"class": "my-custom-class"}):
 You can also use tables instead of arrays of tuples of strings (lol)
 ```nim
 import std/htmlparser
-import std/xmltree
 import beautifulparser
 
 
@@ -38,7 +36,6 @@ for i in html.findAllNodes("span", {"class": "my-custom-class"}.toTable()):
 ### Get the first element
 ```nim
 import std/htmlparser
-import std/options
 import beautifulparser
 
 

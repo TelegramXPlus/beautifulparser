@@ -3,6 +3,9 @@ import std/strtabs
 import std/tables
 import std/options
 
+export xmltree
+export options
+
 
 proc getNodes(node: XmlNode, name: string, options: Table[string, string]): seq[XmlNode] =
   for childr in node.findAll(name):
