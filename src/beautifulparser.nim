@@ -5,6 +5,7 @@ import std/options
 
 export xmltree
 export options
+export strtabs
 
 
 proc getNodes(node: XmlNode, name: string, options: Table[string, string]): seq[XmlNode] =
