@@ -1,7 +1,7 @@
 # Package
 
 version       = "0.1.3"
-author        = "EdgeUser"
+author        = "TelegramXPlus"
 description   = "Simple parser for HTML"
 license       = "MIT"
 srcDir        = "src"
