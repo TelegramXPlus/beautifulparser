@@ -22,7 +22,7 @@ for i in html.findAllNodes("span", {"class": "my-custom-class"}):
 ### Using tables
 You can also use tables instead of arrays of tuples of strings (lol)
 ```nim
-import std/htmlparser
+import std/[htmlparser, tables]
 import beautifulparser
 
 
