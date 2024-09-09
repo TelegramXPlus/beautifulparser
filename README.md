@@ -1,4 +1,7 @@
 # beautifulparser
+
+[![Test](https://github.com/TelegramXPlus/beautifulparser/actions/workflows/test.yml/badge.svg)](https://github.com/TelegramXPlus/beautifulparser/actions/workflows/test.yml)
+
 beautifulparser is a (very) simple library for parsing HTML documents inspired by beautifulsoup4
 
 ## Getting Started
