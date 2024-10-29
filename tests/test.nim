@@ -1,5 +1,8 @@
 import unittest
-import htmlparser
+when (NimMajor, NimMinor, NimPatch) == (2, 2, 0):
+  import pkg/htmlparser
+else:
+  import htmlparser
 import strtabs
 import beautifulparser
 
