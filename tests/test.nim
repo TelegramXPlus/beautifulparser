@@ -1,5 +1,5 @@
 import unittest
-when (NimMajor, NimMinor, NimPatch) == (2, 2, 0):
+when (NimMajor, NimMinor, NimPatch) >= (2, 2, 0):
   import pkg/htmlparser
 else:
   import htmlparser
