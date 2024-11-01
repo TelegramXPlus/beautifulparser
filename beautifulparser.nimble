@@ -13,5 +13,4 @@ requires "nim >= 1.0.0"
 
 
 task test, "Run tests":
-  exec "nimble install htmlparser"
   exec "nim c -r tests/test.nim"
